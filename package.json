@@ -1,0 +1,29 @@
+{
+  "name": "restapi-jwt-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"tsc\" \"nodemon dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorgmp/restapi-jwt-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorgmp/restapi-jwt-ts/issues"
+  },
+  "homepage": "https://github.com/victorgmp/restapi-jwt-ts#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
