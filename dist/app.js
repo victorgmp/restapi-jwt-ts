@@ -11,7 +11,8 @@ const auth_1 = __importDefault(require("./routes/auth"));
 app.set('port', 4000);
 // middlewares
 app.use(morgan_1.default('dev'));
+app.use(express_1.default.json());
 // routes
-app.use(auth_1.default);
+app.use('/api/auth', auth_1.default);
 exports.default = app;
 //# sourceMappingURL=app.js.map
