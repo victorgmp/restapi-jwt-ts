@@ -4,7 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
-mongoose_1.default.connect('mongodb+srv://jwt_usr:jwt123456.@cluster0-i17re.mongodb.net/test?retryWrites=true&w=majority', {
+// mongoose.connect('mongodb+srv://jwt_usr:jwt123456.@cluster0-i17re.mongodb.net/test?retryWrites=true&w=majority', {
+const mongoLocal = 'mongodb://localhost/restapi-jwt-ts';
+mongoose_1.default.connect(process.env.MONGO_URI || mongoLocal, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
