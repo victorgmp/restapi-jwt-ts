@@ -8,7 +8,7 @@ const morgan_1 = __importDefault(require("morgan"));
 const app = express_1.default();
 const auth_1 = __importDefault(require("./routes/auth"));
 // settings
-app.set('port', 4000);
+app.set('port', process.env.PORT || 4000);
 // middlewares
 app.use(morgan_1.default('dev'));
 app.use(express_1.default.json());

@@ -9,7 +9,7 @@ const mongoLocal = 'mongodb://localhost/restapi-jwt-ts';
 mongoose_1.default.connect(process.env.MONGO_URI || mongoLocal, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true
+    useCreateIndex: true,
 })
     .then(db => console.log('Database is connected'))
     .catch(err => console.log(err));
